@@ -1,0 +1,21 @@
+[project]
+name = "sab"
+version = "0.1.0"
+description = "Seachain an Bhearna: Track trains and buses across Ireland in real-time"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+sab = "sab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
